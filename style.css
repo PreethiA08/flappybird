@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 75%;
+    margin: 0;
+  }
+
+body{ 
+    background-image: url("https://media.istockphoto.com/photos/green-field-picture-id183045163?k=20&m=183045163&s=612x612&w=0&h=Zgxoi_vEtGa_pz4WTuEytURaKYqub83nPeph1SBIb3Y=");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;        
+
+}
+
+
+#game{
+    width: 400px;
+    height: 500px;
+    margin: auto;
+}
+#block{
+    width: 50px;
+    height: 510px;
+    background-color: green;
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+}
+@keyframes block{
+    0%{left:400px}
+    100%{left:-50px}
+}
+#hole{
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    opacity: 0.3;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 2s infinite linear;
+}
+#character{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
+}
